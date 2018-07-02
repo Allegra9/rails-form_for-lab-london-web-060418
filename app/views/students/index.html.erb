@@ -1,0 +1,7 @@
+<div> <%= link_to "Add a new student", new_student_path(@student) %> </div>
+
+<h3>All Students:</h3>
+
+<% @students.each do |student| %>
+<div> <%= link_to student.to_s, student_path(student) %> </div>
+<% end %>

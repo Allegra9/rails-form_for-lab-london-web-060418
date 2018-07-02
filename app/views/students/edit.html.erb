@@ -1,0 +1,11 @@
+<div> <%= link_to "Back to all students", students_path %> </div>
+
+<h3>Edit student details:</h3>
+
+<%= form_for(@student) do |f| %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <%= f.submit %>
+<% end %>
